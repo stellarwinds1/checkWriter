@@ -26,6 +26,11 @@ public class AppTest
 			convertedStr = CheckWriter.convert(d);
 			// System.out.println("number is \"" + String.format("%12.2f", d) + "\" and is equal to \"" + convertedStr + "\"");
 			assertEquals(convertedStr, "five hundred eighty six million three hundred  thousand fifty six dollars and 12/100 cents ");
+
+			d = 56.12;
+			convertedStr = CheckWriter.convert(d);
+			// System.out.println("number is \"" + String.format("%12.2f", d) + "\" and is equal to \"" + convertedStr + "\"");
+			assertEquals(convertedStr, "fifty six dollars and 12/100 cents ");
 		} catch (Exception e) {
 			System.err.println("Caught exception " + e.getMessage());
 		}
